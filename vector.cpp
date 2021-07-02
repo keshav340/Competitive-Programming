@@ -31,12 +31,12 @@ int main()
         cout << x << " ";
     }
     cout << v1.front() << endl; //reference to first elememnt
-    cout << v.front() << endl;  //reference to last elememnt
-    cout << v1.back() << endl;
+    cout << v.front() << endl;  
+    cout << v1.back() << endl; //reference to last elememnt
     cout << v.back() << endl;
     auto it = v.insert(v.begin(), 100);
     v.insert(v.begin() + 2, 200);
-    v.insert(v.begin(), 3, 300);
+    v.insert(v.begin(), 3, 300);//Insertion of 
     vector<int> v3;
     v3.insert(v3.begin(), v.begin(), v.end()); //insetion of element
     v3.erase(v3.begin());
