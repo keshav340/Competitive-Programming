@@ -42,6 +42,7 @@ int main()
     v3.erase(v3.begin());
     v1.erase(v1.begin(), v1.end() - 1);
     cout << v.size();
+    cout << v.capacity();
     v3.clear();
     if (v.empty() == false)
     {
