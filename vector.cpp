@@ -25,4 +25,45 @@ int main()
         cout << *i << " ";
     }
     //rbegin(),rend(),cbegin(),cend()
+    v1.pop_back(); //remove last element
+    for (int x : v)
+    {
+        cout << x << " ";
+    }
+    cout << v1.front() << endl; //reference to first elememnt
+    cout << v.front() << endl;  //reference to last elememnt
+    cout << v1.back() << endl;
+    cout << v.back() << endl;
+    auto it = v.insert(v.begin(), 100);
+    v.insert(v.begin() + 2, 200);
+    v.insert(v.begin(), 3, 300);
+    vector<int> v3;
+    v3.insert(v3.begin(), v.begin(), v.end()); //insetion of element
+    v3.erase(v3.begin());
+    v1.erase(v1.begin(), v1.end() - 1);
+    cout << v.size();
+    v3.clear();
+    if (v.empty() == false)
+    {
+        cout << "non empty";
+    }
+    else
+    {
+        cout << "empty";
+    }
+    v.resize(4);
+    for (auto x : v)
+    {
+        cout << x << " ";
+    }
+    v.resize(10);
+    for (auto x : v)
+    {
+        cout << x << " ";
+    }
+    v.resize(20, 100);
+    for (auto x : v)
+    {
+        cout << x << " ";
+    }
 }
