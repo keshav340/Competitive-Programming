@@ -24,5 +24,18 @@ int main(int argc, char)
         cout << x << " ";
     }
     it = l2.erase_after(it, l2.end());
+    l2.clear();
+    if (l2.empty() == true)
+    {
+        cout << "not found any element" << endl;
+    }
+    else
+    {
+        cout << "found" << endl;
+    }
+    l.reverse();
+    forward_list<int> l1 = {10, 20, 30};
+    l.merge(l1);
+    l1.sort();
     return 0;
 }
