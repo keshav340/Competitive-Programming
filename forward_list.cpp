@@ -37,5 +37,6 @@ int main(int argc, char)
     forward_list<int> l1 = {10, 20, 30};
     l.merge(l1);
     l1.sort();
+    l1.unique();
     return 0;
 }
